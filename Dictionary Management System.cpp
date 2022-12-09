@@ -140,7 +140,7 @@ void display()
 	while (getline(MyReadFile, myText))
 	{
 		// Output the text from the file
-		cout << myText;
+		cout << myText<< "\n";
 	}
 
 	// Close the file

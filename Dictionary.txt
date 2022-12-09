@@ -1,0 +1,3 @@
+data    details info
+Authority	government	charge
+Break	crack	in  pieces

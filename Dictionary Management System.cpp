@@ -7,8 +7,6 @@
 #include <string.h>
 using namespace std;
 
-
-
 typedef struct node
 {
 	char word[100];
@@ -88,6 +86,7 @@ void insert()
 	else
 		printf("\nWord already exists\n");
 }
+
 void search()
 {
 	node *t = start;
@@ -130,9 +129,6 @@ void display()
 	// 	t = t->next;
 	// 	printf("\n\n");
 	// }
-
-
-	
 
 	// Create a text string, which is used to output the text file
 	string myText;

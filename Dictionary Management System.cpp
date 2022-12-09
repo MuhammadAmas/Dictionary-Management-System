@@ -117,34 +117,34 @@ void search()
 
 void display()
 {
-	// node *t = start;
-	// while (t != NULL)
-	// {
-	// 	printf("\n\t\tWord->");
-	// 	puts(t->word);
-	// 	printf("\t\tSynonym->");
-	// 	puts(t->syno);
-	// 	printf("\t\tMeaning->");
-	// 	puts(t->meaning);
-	// 	t = t->next;
-	// 	printf("\n\n");
-	// }
-
-	// Create a text string, which is used to output the text file
-	string myText;
-
-	// Read from the text file
-	ifstream MyReadFile("Dictionary.txt");
-
-	// Use a while loop together with the getline() function to read the file line by line
-	while (getline(MyReadFile, myText))
+	node *t = start;
+	while (t != NULL)
 	{
-		// Output the text from the file
-		cout << myText<< "\n";
+		printf("\n\t\tWord->");
+		puts(t->word);
+		printf("\t\tSynonym->");
+		puts(t->syno);
+		printf("\t\tMeaning->");
+		puts(t->meaning);
+		t = t->next;
+		printf("\n\n");
 	}
 
-	// Close the file
-	MyReadFile.close();
+	// // Create a text string, which is used to output the text file
+	// string myText;
+
+	// // Read from the text file
+	// ifstream MyReadFile("Dictionary.txt");
+
+	// // Use a while loop together with the getline() function to read the file line by line
+	// while (getline(MyReadFile, myText))
+	// {
+	// 	// Output the text from the file
+	// 	cout << myText<< "\n";
+	// }
+
+	// // Close the file
+	// MyReadFile.close();
 }
 
 void add()
@@ -160,9 +160,17 @@ void add()
 		l = fopen("Dictionary.txt", "a");
 		while (save != NULL)
 		{
-			fprintf(l, "\n%s", save->word);
+			fprintf(l, "Word->");
+			fprintf(l, "\t%s", save->word);
+			fprintf(l, "\n");
+
+			fprintf(l, "Synonym->");
 			fprintf(l, "\t%s", save->syno);
+			fprintf(l, "\n");
+
+			fprintf(l, "Meaning->");
 			fprintf(l, "\t%s", save->meaning);
+			fprintf(l, "\n\n");
 			save = save->next;
 		}
 		fclose(l);

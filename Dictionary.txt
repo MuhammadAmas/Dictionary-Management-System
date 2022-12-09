@@ -1,3 +1,8 @@
-data    details info
-Authority	government	charge
-Break	crack	in  pieces
+Word->	q
+Synonym->	w
+Meaning->	e
+
+Word->	r
+Synonym->	t
+Meaning->	y
+

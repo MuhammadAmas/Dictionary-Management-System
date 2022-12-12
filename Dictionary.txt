@@ -6,3 +6,7 @@ Word->	r
 Synonym->	t
 Meaning->	y
 
+Word->	we
+Synonym->	us
+Meaning->	hum
+

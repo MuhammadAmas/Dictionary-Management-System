@@ -6,18 +6,23 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "main.h"
-#include "createnode.h"
 using namespace std;
 
+typedef  struct node
+{
+	char word[100];
+	char syno[100];
+	char meaning[100];
+	struct node *next;
+};
 FILE *l;
 node *start = NULL;
- /* node *createnode()
+node *createnode()
 {
 	node *n;
 	n = (node *)malloc(sizeof(node));
 	return (n);
-} */
+}
 
 bool search(node *temp)
 {

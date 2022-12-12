@@ -5,23 +5,19 @@
 #include <malloc.h>
 #include <stdlib.h>
 #include <string.h>
+
+#include "main.h"
+#include "createnode.h"
 using namespace std;
 
-typedef struct node
-{
-	char word[100];
-	char meaning[1000];
-	char syno[1000];
-	struct node *next;
-} node;
 FILE *l;
 node *start = NULL;
-node *createnode()
+ /* node *createnode()
 {
 	node *n;
 	n = (node *)malloc(sizeof(node));
 	return (n);
-}
+} */
 
 bool search(node *temp)
 {

@@ -154,7 +154,7 @@ void display()
 	// // Close the file
 	// MyReadFile.close();
 
-/*
+
 void add()
 {
 	node *save;
@@ -184,9 +184,9 @@ void add()
 		fclose(l);
 		printf("\n\t\t[*Data added and saved successfully]\n");
 	}
-} */
+} 
 
-/* void del()
+void del()
 {
 	node *save;
 	save = start;
@@ -200,19 +200,19 @@ void add()
 		fclose(l);
 		printf("\n\t\t[*File deleted successfully]\n");
 	}
-} */
+} 
 
 int main()
 {
 	while (true)
 	{
 		int ch;
-		printf("\n***Dictionary Management System***\n");
+		printf("\n\t\t***WELCOME TO DICTIONARY MANAGMENT SYSTEM***\n");
 		printf("\n1.Add a new Word.\n");
 		printf("2.Search in dictionary\n");
 		printf("3.Show Dictionary.\n");
-		printf("4.Save in file(Dictionary.txt)\n");
-		printf("5.Delete file(Dictionary.txt)\n");
+		printf("4.Export in Dictionary.txt\n");
+		printf("5.Delete from Dictionary.txt\n");
 		printf("0.Close Dictionary.\n");
 		printf("\n\t\tEnter your Choice: ");
 		scanf("%d", &ch);
@@ -228,12 +228,12 @@ int main()
 		case 3:
 			display();
 			break;
-		/*case 4:
+		case 4:
 			add();
 			break;
 		case 5:
 			del();
-			break; */
+			break; 
 
 		case 0:
 			return 0;

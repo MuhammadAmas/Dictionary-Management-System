@@ -6,18 +6,29 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "main.h"
-#include "createnode.h"
+//#include "main.h"
+//#include "search.h"
+
 using namespace std;
 
+typedef  struct node
+{
+	char word[100];
+	char syno[100];
+	char meaning[100];
+	struct node *next;
+}; 
+
 FILE *l;
+
 node *start = NULL;
- /* node *createnode()
+node *createnode()
 {
 	node *n;
 	n = (node *)malloc(sizeof(node));
 	return (n);
-} */
+}
+
 
 bool search(node *temp)
 {
@@ -29,7 +40,7 @@ bool search(node *temp)
 		t = t->next;
 	}
 	return false;
-}
+} 
 
 void insert()
 {
@@ -124,7 +135,8 @@ void display()
 		puts(t->meaning);
 		t = t->next;
 		printf("\n\n");
-	}
+	} 
+}
 
 	// // Create a text string, which is used to output the text file
 	// string myText;
@@ -141,8 +153,8 @@ void display()
 
 	// // Close the file
 	// MyReadFile.close();
-}
 
+/*
 void add()
 {
 	node *save;
@@ -172,9 +184,9 @@ void add()
 		fclose(l);
 		printf("\n\t\t[*Data added and saved successfully]\n");
 	}
-}
+} */
 
-void del()
+/* void del()
 {
 	node *save;
 	save = start;
@@ -186,9 +198,9 @@ void del()
 	{
 		l = fopen("Dictionary.txt", "w");
 		fclose(l);
-		printf("\n\t\t[*Filedeleted successfully]\n");
+		printf("\n\t\t[*File deleted successfully]\n");
 	}
-}
+} */
 
 int main()
 {
@@ -196,13 +208,13 @@ int main()
 	{
 		int ch;
 		printf("\n***Dictionary Management System***\n");
-		printf("\n1.Add Word.\n");
-		printf("\n2.Search\n");
-		printf("\n3.Show Dictionary.\n");
-		printf("\n4.Save in file(Dictionary.txt)\n");
-		printf("\n5.Delete file(Dictionary.txt)\n");
-		printf("\n0.Close Dictionary.\n");
-		printf("\n\t\tEnter your Choice ");
+		printf("\n1.Add a new Word.\n");
+		printf("2.Search in dictionary\n");
+		printf("3.Show Dictionary.\n");
+		printf("4.Save in file(Dictionary.txt)\n");
+		printf("5.Delete file(Dictionary.txt)\n");
+		printf("0.Close Dictionary.\n");
+		printf("\n\t\tEnter your Choice: ");
 		scanf("%d", &ch);
 
 		switch (ch)
@@ -216,15 +228,17 @@ int main()
 		case 3:
 			display();
 			break;
-		case 4:
+		/*case 4:
 			add();
 			break;
 		case 5:
 			del();
-			break;
+			break; */
 
 		case 0:
 			return 0;
 		}
+
+		
 	}
 }

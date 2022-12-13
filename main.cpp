@@ -6,9 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-//#include "main.h"
-//#include "search.h"
-
 using namespace std;
 
 typedef  struct node

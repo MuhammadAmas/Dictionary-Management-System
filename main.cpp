@@ -10,10 +10,10 @@ using namespace std;
 
 int main()
 {
-	int ch; 
-	int ch2;
-	do {
-		printf("\n\t\t***WELCOME TO DICTIONARY MANAGMENT SYSTEM***\n");
+	while (true)
+	{
+		int ch;
+		printf("\n\t\t*** WELCOME TO DICTIONARY MANAGMENT SYSTEM ***\n");
 		printf("\n1.Add a new Word.\n");
 		printf("2.Search in dictionary\n");
 		printf("3.Show Dictionary.\n");
@@ -39,17 +39,10 @@ int main()
 			break;
 		case 5:
 			del();
-			break; 
+			break;
 
 		case 0:
 			return 0;
 		}
-		printf("\n\n\t\tYou want to use Dictionary again?");
-		printf("\n\t\t1.Yes\n\t\t2.No\n");
-		printf("\n\t\tEnter your Choice: ");
-		scanf("%d", &ch2);
-	} 
-	while (ch2 == 1);
-
-		return 0;
 	}
+}

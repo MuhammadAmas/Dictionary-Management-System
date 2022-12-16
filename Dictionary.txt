@@ -1,12 +1,16 @@
-Word->	q
-Synonym->	w
-Meaning->	e
+Word->	Big
+Synonym->	Large
+Meaning->	Huge
 
-Word->	r
-Synonym->	t
-Meaning->	y
+Word->	Happy
+Synonym->	Joyous
+Meaning->	Content
 
-Word->	we
-Synonym->	us
-Meaning->	hum
+Word->	Sad
+Synonym->	Unhappy
+Meaning->	Miserable
+
+Word->	Fast 
+Synonym->	Quick
+Meaning->	Swift
 

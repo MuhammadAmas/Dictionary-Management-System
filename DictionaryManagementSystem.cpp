@@ -173,6 +173,6 @@ void del()
 	{
 		l = fopen("Dictionary.txt", "w");
 		fclose(l);
-		printf("\n\t\t[*Filedeleted successfully]\n");
+		printf("\n\t\t[*File deleted successfully]\n");
 	}
 }
